@@ -19,7 +19,14 @@ app.get('/', (req, res) => {
 
 //auth routes
 const authRoute = require('./routes/authRoute.js');
+//topic routes etc
+
+const topicRoute = require('./routes/topicRoute.js');
+const authMiddleware = require('./middleware/authMiddleware.js');
+
+
 app.use('/api/auth', authRoute);
+app.use('/api/topics', authMiddleware, topicRoute);
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
