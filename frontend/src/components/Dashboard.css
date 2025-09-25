@@ -1,0 +1,49 @@
+.dashboard-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.add-topic {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.add-topic input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.add-topic input:focus {
+  border-color: #4e89ff;
+  box-shadow: 0 0 6px rgba(78, 137, 255, 0.4);
+}
+
+.add-topic button {
+  padding: 12px 20px;
+  border: none;
+  background: #4e89ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.add-topic button:hover {
+  background: #3a6fd1;
+}
+
+.topics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

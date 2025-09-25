@@ -1,0 +1,33 @@
+.topic-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic-card h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.topic-card p {
+  margin: 5px 0 0 0;
+  color: #555;
+}
+
+.topic-card button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #e74c3c;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.topic-card button:hover {
+  background: #c0392b;
+}
