@@ -1,5 +1,5 @@
 import axios from "axios";
-import './TopicCard.css'; // Import card CSS
+import './TopicCard.css';
 
 export default function TopicCard({ topic, refresh }) {
   const token = localStorage.getItem("token");
@@ -17,11 +17,11 @@ export default function TopicCard({ topic, refresh }) {
 
   return (
     <div className="topic-card">
-      <div>
+      <div className="topic-details">
         <h3>{topic.title}</h3>
         <p>{topic.notes}</p>
       </div>
-      <button onClick={deleteTopic}>Delete</button>
+      <button className="delete-button" onClick={deleteTopic}>Delete</button>
     </div>
   );
 }

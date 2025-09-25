@@ -1,33 +1,42 @@
 .topic-card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 18px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.topic-card h3 {
-  margin: 0;
-  color: #2c3e50;
-}
-
-.topic-card p {
-  margin: 5px 0 0 0;
-  color: #555;
-}
-
-.topic-card button {
-  padding: 8px 14px;
-  border: none;
-  border-radius: 6px;
-  background: #e74c3c;
-  color: white;
-  cursor: pointer;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #e0f7ff, #ffffff);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
-.topic-card button:hover {
-  background: #c0392b;
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.topic-details h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.topic-details p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.delete-button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  height: fit-content;
+}
+
+.delete-button:hover {
+  background: #d9363e;
 }
