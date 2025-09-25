@@ -13,7 +13,8 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route
           path="/dashboard"
-          element={token ? <DashboardPage /> : <Navigate to="/login" />}
+            element={<DashboardPage />}
+          //element={token ? <DashboardPage /> : <Navigate to="/login" />}
         />
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
